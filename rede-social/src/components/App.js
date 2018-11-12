@@ -10,8 +10,8 @@ export default class App extends React.Component {
             <Post title="Estou aprendendo React!"/>
             <Post title="Vou estudar mais sprint-boot!"/>
             <Post title="Tenho que aprender a mexer com MongoDB!"/>
+
             </div>
-            
         );
     }
 }
