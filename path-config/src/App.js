@@ -1,0 +1,13 @@
+import React, { Component } from 'react';
+
+import ToDo from './components/ToDo/Itens/index';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App"/>
+    );
+  }
+}
+
+export default App;
