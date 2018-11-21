@@ -95,4 +95,22 @@ document.getElementById('usuario').onclick = function () {
 document.getElementById('soma').onclick = function () {
   var valor = Matematica.soma(10, 40);
   console.log(valor);
+}; //Array functions
+
+
+var array = [1, 2, 3, 4, 5];
+
+var dobro = function dobro(e) {
+  return e * 2;
 };
+
+var newArray = array.map(dobro);
+console.log(newArray);
+
+var nome = function nome() {
+  return {
+    nome: "Thiago"
+  };
+};
+
+console.log(nome());

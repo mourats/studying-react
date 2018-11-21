@@ -41,3 +41,15 @@ document.getElementById('soma').onclick = function () {
     const valor = Matematica.soma(10, 40);
     console.log(valor);
 }
+
+//Array functions
+const array = [1, 2, 3, 4, 5];
+
+const dobro = (e) => e*2;
+
+const newArray = array.map(dobro);
+
+console.log(newArray);
+
+const nome = () => ({nome: "Thiago"});
+console.log(nome());
