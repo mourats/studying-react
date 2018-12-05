@@ -59,21 +59,25 @@ const styles = () => ({
   }
 });
 
-const App = ({ classes }) => (
-  <div>
-    <div className={classes.background} />
-    <Grid container className={classes.root}>
-      <Grid item xs={12}>
-        <Card className={classes.card}>
-          <Grid container>
-            <LeftContainer classes={classes} />
-            <RightContainer classes={classes} />
-          </Grid>
-        </Card>
+const App = (props) => {
+  const { classes } = props;
+  console.log(props)
+  return (
+    <div>
+      <div className={classes.background} />
+      <Grid container className={classes.root}>
+        <Grid item xs={12}>
+          <Card className={classes.card}>
+            <Grid container>
+              <LeftContainer classes={classes} />
+              <RightContainer classes={classes} />
+            </Grid>
+          </Card>
+        </Grid>
       </Grid>
-    </Grid>
-  </div>
-);
+    </div>
+  );
+  }
 
 const list = [
   { id: 1, name: "Diego", text: "Lorem ipsum", image: <ImageIcon /> },
@@ -97,8 +101,8 @@ const LeftContainer = ({ classes }) => (
       </Typography>
     </Paper>
     <List>
-      {list.map(item => (
-        <ListItem>
+      {list.map((item, index) => (
+        <ListItem key={index}>
           <Avatar>{item.image}</Avatar>
           <ListItemText primary={item.name} secondary={item.text} />
         </ListItem>

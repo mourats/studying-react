@@ -3,25 +3,16 @@ import React from 'react';
 import Comment from './Comment'
 
 export default class Post extends React.Component {
-
-    constructor(pros) {
-
-        super(pros);
-
-        this.state = {
-            comments: [],
-            newCommentText: ''
-        };
-
-        this.handSubmit = this.handSubmit.bind(this);
-        this.handTextChange = this.handTextChange.bind(this);
-    }
+    state = {
+        comments: [],
+        newCommentText: ''
+    };
 
     componentWillMount() {
         // O render vai ser executado, quer fazer algo antes?
         this.setState({ loading: true });
     }
-
+    
     render() {
         return (
             <div>
@@ -42,7 +33,7 @@ export default class Post extends React.Component {
         // O render já executou, o que faremos agora? Chamar a API!
     }
 
-    handSubmit(e) {
+    handSubmit =(e)=> {
         this.setState({
             comments: [
                 ...this.state.comments,
@@ -53,7 +44,7 @@ export default class Post extends React.Component {
         e.preventDefault();
     }
 
-    handTextChange(e) {
+    handTextChange = (e) => {
         this.setState({ newCommentText: e.target.value });
     }
 }

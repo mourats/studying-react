@@ -53,3 +53,9 @@ console.log(newArray);
 
 const nome = () => ({nome: "Thiago"});
 console.log(nome());
+
+// Valores padrão
+const soma = (a = 4, b = 6) => a + b;
+
+console.log(soma(1)); // 7 
+console.log(soma()); // 10
