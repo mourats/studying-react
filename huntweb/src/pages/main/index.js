@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import api from "../../services/api";
 
+import './styles.css';
+
 export default class Main extends Component {
 
     state = {
@@ -19,12 +21,20 @@ export default class Main extends Component {
     };
 
     render() {
+
+        const { students } = this.state;
         return (
             <div className="student-list">
                 <h1> Hello! Eu tenho a api! </h1>
-                <h2> Contagem de estudantes: {this.state.students.length}</h2>
-                {this.state.students.map((student, index) => (
-                    <h3 key={index}>{student.nome}</h3>
+                <h2> Contagem de estudantes: {students.length}</h2>
+                {students.map((student, index) => (
+                    <article key={index}>
+                    <strong>{student.nome}</strong>
+                    <p>{student.matricula}</p>
+                    <p>{student.email}</p>
+                    <p>{student.periodoEntrada}</p>
+                    <a target="_blank" rel="noopener noreferrer" href={"https://prematriculabackend.herokuapp.com/api/aluno/" + student.email}>Ver aluno API</a>
+                    </article>
                 ))}
             </div>
         );
