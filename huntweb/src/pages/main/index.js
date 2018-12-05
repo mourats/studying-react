@@ -33,7 +33,7 @@ export default class Main extends Component {
                     <p>{student.matricula}</p>
                     <p>{student.email}</p>
                     <p>{student.periodoEntrada}</p>
-                    <a target="_blank" rel="noopener noreferrer" href={"https://prematriculabackend.herokuapp.com/api/aluno/" + student.email}>Ver aluno API</a>
+                    <a target="_blank" rel="noopener noreferrer" href={"https://prematriculabackend.herokuapp.com/api/aluno/" + student.email}>Ver aluno na API</a>
                     </article>
                 ))}
             </div>
