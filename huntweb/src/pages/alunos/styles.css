@@ -17,6 +17,11 @@
     color: #999;
     margin-top: 5px;
     line-height: 24px;
+    font-size: 14px;
+}
+
+.student-list article strong {
+    font-size: 16px;
 }
 
 .student-list article a {
