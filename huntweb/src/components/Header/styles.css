@@ -24,5 +24,12 @@ header#main-header {
 #menu a {
     border: 0.5px solid #4682B4;
     border-radius: 5px;
-    margin-left: 10px
+    margin-left: 10px;
+    height: 42px;
+    border-radius: 5px;
+    color: #4682B4;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    transition: all 0.2s;
 }
