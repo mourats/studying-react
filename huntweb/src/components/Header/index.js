@@ -15,6 +15,12 @@ const Header = () => {
                 <NavItem eventKey={2} href="/disciplinas">
                     Disciplinas
                 </NavItem>
+                <NavItem eventKey={3} href="/admin">
+                    Admin
+                </NavItem>
+                <NavItem eventKey={4} href="/prematricula">
+                    PreMatricula
+                </NavItem>
             </Nav>
         </div>
     )

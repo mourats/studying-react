@@ -1,10 +1,10 @@
-.courses-list {
+.admin-list {
     max-width: 700px;
     margin: 20px auto 0;
     padding: 0 20px;
 }
 
-.courses-list article {
+.admin-list article {
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 5px;
@@ -12,7 +12,7 @@
     margin-bottom: 20px;
 }
 
-.courses-list article p {
+.admin-list article p {
     font-size: 16px;
     color: #999;
     margin-top: 5px;
@@ -20,10 +20,11 @@
     font-size: 14px;
 }
 
-.courses-list article strong {
+.admin-list article strong {
     font-size: 16px;
 }
-.courses-list article a {
+
+.admin-list article a {
     height: 42px;
     border-radius: 5px;
     border: 1px solid #4682B4;
@@ -37,8 +38,8 @@
     transition: all 0.2s;
 }
 
-.courses-list article a:hover {
+.admin-list article a:hover {
     background: #4682B4;
     color: white;
 }
-    
+
