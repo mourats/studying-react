@@ -1,11 +1,7 @@
 import React from "react";
+import TodoList from './TodoList';
+import TodoStore from './TodoStore';
 
-import "./styles/App.scss";
-
-const App = () => {
-    return <h1 id="title">LSI é top</h1>;
-};
-
-App.displayName = "App";
+const App = () => {return (<TodoList />);}
 
 export default App;
